@@ -18,7 +18,7 @@ jobs:
         git config --global user.name "utkarsh-tf141"
         git config --global user.email "utkarshm21@iitk.ac.in"
         git checkout -b dummy  
-        git pull origin main
+        git merge --no-edit origin/main
         git add .
         git commit -m "Syncing with main"
         git push origin dummy  
