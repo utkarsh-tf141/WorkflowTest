@@ -25,4 +25,6 @@ func main() {
 	} else {
 		fmt.Println(num, "has multiple digits")
 	}
+
+	fmt.Println("This is the dummy branch")
 }
