@@ -18,6 +18,6 @@ jobs:
       run: |
         git config --global user.name "utkarsh-tf141"
         git config --global user.email "utkarshm21@iitk.ac.in"
-        git checkout -b dummy  
+        git checkout dummy  
         git merge --no-edit origin/main
-        git push origin/dummy dummy  
+        git push origin dummy  
