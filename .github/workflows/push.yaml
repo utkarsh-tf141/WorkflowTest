@@ -1,0 +1,23 @@
+name: Push to Branch
+
+on:
+  workflow_dispatch
+  # push:
+  #   branches:
+  #     - main  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2  
+
+    - name: Push to Different Branch
+      run: |
+        git config --global user.name "utkarsh-tf141"
+        git config --global user.email "utkarshm21@iitk.ac.in"
+        git checkout -b dummy  
+        git merge --no-edit origin/main
+        git push origin/dummy dummy  
