@@ -20,4 +20,4 @@ jobs:
         git config --global user.email "utkarshm21@iitk.ac.in"
         git checkout -b dummy  
         git merge --no-edit origin/main
-        git push origin dummy  
+        git push origin/dummy dummy  
